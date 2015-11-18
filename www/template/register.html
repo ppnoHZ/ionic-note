@@ -42,10 +42,12 @@
           </label>
           是否同意注册协议
         </li>
-        <button ng-disabled="!ischecked ||register_form.$invalid" type="submit" ng-click="register()"
+        <!--||register_form.$invalid-->
+        <button ng-disabled="!ischecked" type="submit" ng-click="register()"
                 class="button  button-positive button-block">
           注册
         </button>
+        <pre>{{userInfo | json}}</pre>
       </form>
     </ion-list>
 </ion-view>
